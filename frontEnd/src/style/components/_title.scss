@@ -1,4 +1,6 @@
 .title {
+    user-select: none;
+
     h2 {
         font-size: 14px;
         font-weight: 500;
@@ -15,7 +17,7 @@
             width: 120px;
             height: 1px;
             display: inline-block;
-            background: #ef6603;
+            background: #1a56db;
             margin: 4px 10px;
         }
     }
