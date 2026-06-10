@@ -10,7 +10,6 @@ import { useTranslation } from "./hooks/useTranslation";
 
 function App() {
     const { changeLanguage, t } = useTranslation();
-    console.log(t("language.ka"));
 
     return (
         <>
