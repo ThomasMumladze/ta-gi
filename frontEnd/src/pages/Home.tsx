@@ -1,5 +1,6 @@
 import React from "react";
 import Contacts from "./Contacts";
+import Services from "./Services";
 
 interface Props {
     t: (key: string) => any;
@@ -11,6 +12,7 @@ const Home = (props: Props) => {
 
     return (
         <React.Fragment>
+            <Services t={t} />
             <Contacts t={t} />
         </React.Fragment>
     );
