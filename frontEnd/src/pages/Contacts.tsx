@@ -20,7 +20,7 @@ const Contacts = (props: Props) => {
 
     return (
         <section className="contact">
-            <Title subtitle="Contact" title="Contact Us" />
+            <Title subtitle={t("contact.contact")} title={t("contact.contactUs")} />
             <div className="contact-body">
                 <div className="contact-body--col">
                     <div className="info-item">
@@ -28,7 +28,7 @@ const Contacts = (props: Props) => {
                             <TfiEmail />
                         </blockquote>
                         <div>
-                            <h3>Email</h3>
+                            <h3>{t("contact.email")}</h3>
 
                             <p
                                 onClick={(e: React.MouseEvent<HTMLParagraphElement>) =>
@@ -44,7 +44,7 @@ const Contacts = (props: Props) => {
                             <BsTelephone />
                         </blockquote>
                         <div>
-                            <h3>call us</h3>
+                            <h3>{t("contact.phone")}</h3>
                             <p
                                 onClick={(e: React.MouseEvent<HTMLParagraphElement>) =>
                                     handleTextCopy(e.currentTarget.textContent)
@@ -62,7 +62,7 @@ const Contacts = (props: Props) => {
                     </div>
                     <TextArea oneChange={() => {}} placeholder={t("contact.message")} value="" />
                     <Button btnOnClick={() => {}} htmlClass="" isDisabled={false}>
-                        send message
+                        {t("contact.sendMessage")}
                     </Button>
                 </div>
             </div>
