@@ -1,10 +1,13 @@
+import "./style/pages/index.scss";
+
 import "./App.scss";
-import Title from "./components/Title";
+
+import Home from "./pages/Home";
 
 function App() {
     return (
         <>
-            <Title subtitle="Pricing" title="What they are saying about us" />
+            <Home />
         </>
     );
 }
